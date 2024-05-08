@@ -1,0 +1,33 @@
+﻿<Window x:Class="PsychoTest.Pages.AddRemovePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PsychoTest.Pages"
+        mc:Ignorable="d"
+        Title="AddRemovePage" Height="1024" Width="1440">
+    <Grid Background="#00A08A">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <ListView Margin="0,10,0,10" Name="TestList" Grid.Row="0" Background="#0000" BorderThickness="0">
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Width="1400"/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel  Orientation="Horizontal">
+                        
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </Grid>
+</Window>

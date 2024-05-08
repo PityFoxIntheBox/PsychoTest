@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4238b77865c547418f14adb7d91cfa13" Name="Diagram1">
+        <EntityTypeShape EntityType="PsychoTestsModel.Answers" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PsychoTestsModel.Categories" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PsychoTestsModel.Questions" Width="1.5" PointX="5.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PsychoTestsModel.Results" Width="1.5" PointX="5.25" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PsychoTestsModel.Roles" Width="1.5" PointX="0.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PsychoTestsModel.Tests" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PsychoTestsModel.Users" Width="1.5" PointX="3" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PsychoTestsModel.Users_Tests" Width="1.5" PointX="8" PointY="1.75" IsExpanded="true" />
+        <AssociationConnector Association="PsychoTestsModel.FK_Questions_Answers" ManuallyRouted="false" />
+        <AssociationConnector Association="PsychoTestsModel.FK_Tests_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="PsychoTestsModel.FK_Questions_Tests" ManuallyRouted="false" />
+        <AssociationConnector Association="PsychoTestsModel.FK_Results_Tests" ManuallyRouted="false" />
+        <AssociationConnector Association="PsychoTestsModel.FK_Users_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="PsychoTestsModel.FK_Users_Tests_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="PsychoTestsModel.FK_Users_Tests_Results" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
