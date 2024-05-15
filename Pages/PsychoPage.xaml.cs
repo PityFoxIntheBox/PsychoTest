@@ -37,7 +37,8 @@ namespace PsychoTest.Pages
 
         private void AddPatients(object sender, RoutedEventArgs e)
         {
-
+            Window wnd = new AddRemovePage(Pid);
+            wnd.ShowDialog();
         }
 
         private void FullnamePatient(object sender, RoutedEventArgs e)
