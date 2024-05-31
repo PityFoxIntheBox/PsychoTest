@@ -32,6 +32,7 @@ namespace PsychoTest.Pages
 
             questions = DB.Questions.Where(x=>x.Id_test==id_test).ToList();
             QuestionContent.Text = questions[n].Content;
+            NameOfTest.Text = DB.Tests.Where(x => x.Test_id == id_test).Select(x=>x.Test_name).FirstOrDefault();
             test_id = id_test; 
             user_id = id_user;
         }
