@@ -30,7 +30,7 @@
                     <Border.Background>
                         <SolidColorBrush Color="White" Opacity="0.22"/>
                     </Border.Background>
-                    <TextBox Text="psycho" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="30" BorderBrush="#0000" Template="{DynamicResource TextBoxTemplate1}" HorizontalAlignment="Center" Height="70" Width="400" Background="#0000" Name="Login"/>
+                    <TextBox VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="30" BorderBrush="#0000" Template="{DynamicResource TextBoxTemplate1}" HorizontalAlignment="Center" Height="70" Width="400" Background="#0000" Name="Login"/>
                 </Border>
 
                 <TextBlock Margin="0,15,0,0" HorizontalAlignment="Center" Text="Пароль" FontSize="30"/>
@@ -39,7 +39,7 @@
                     <Border.Background>
                         <SolidColorBrush Color="White" Opacity="0.22"/>
                     </Border.Background>
-                    <PasswordBox Password="psycho" Template="{DynamicResource PasswordBoxTemplate1}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="30" BorderBrush="#0000" HorizontalAlignment="Center"  Height="70" Width="400" Background="#0000" PasswordChar="•" Name="Password"/>
+                    <PasswordBox Template="{DynamicResource PasswordBoxTemplate1}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="30" BorderBrush="#0000" HorizontalAlignment="Center"  Height="70" Width="400" Background="#0000" PasswordChar="•" Name="Password"/>
                 </Border>
 
                 <Border HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,40,0,0" CornerRadius="10" Background="#FFA400">
