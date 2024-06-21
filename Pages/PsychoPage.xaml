@@ -16,6 +16,8 @@
             <RowDefinition Height="4*"/>
         </Grid.RowDefinitions>
 
+        <Button Click="ExitToAuth" Margin="20,0,0,0" Content="Выйти" FontSize="35" Background="#C98100" Template="{StaticResource ButtonTemplate1}" HorizontalAlignment="Left" Height="100" Width="195"/>
+
         <Button Click="AddPatients" Margin="0,0,20,0" Background="#FFA400" Template="{StaticResource ButtonTemplate1}" HorizontalAlignment="Right" Height="160" Width="195">
             <Button.Content>
                 <Image Width="173" Height="154" Source="/Resources/people_icon.png"/>

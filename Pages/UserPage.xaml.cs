@@ -85,5 +85,10 @@ namespace PsychoTest.Pages
             int resid = DB.Users_Tests.Where(x=>x.Id_user == user_id && x.Results.Id_test == id).Select(x=>x.Id_result).FirstOrDefault();
             tb.Text = "Ваш результат: " + DB.Results.Where(x=>x.Result_id == resid).Select(x=>x.Result_name).FirstOrDefault();
         }
+
+        private void ExitToAuth(object sender, RoutedEventArgs e)
+        {
+            MainFrame.frame.Navigate(new LoginPage());
+        }
     }
 }

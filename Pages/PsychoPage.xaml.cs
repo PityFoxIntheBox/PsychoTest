@@ -29,8 +29,8 @@ namespace PsychoTest.Pages
 
             Pid = id;
             Fullname.Text = DB.Users.Where(x=>x.User_id == id).Select(x=>x.Surname).FirstOrDefault() + 
-                " " + DB.Users.Where(x => x.User_id == id).Select(x => x.Surname).FirstOrDefault() + 
-                " " + DB.Users.Where(x => x.User_id == id).Select(x => x.Surname).FirstOrDefault();
+                " " + DB.Users.Where(x => x.User_id == id).Select(x => x.Name).FirstOrDefault() + 
+                " " + DB.Users.Where(x => x.User_id == id).Select(x => x.Patronymic).FirstOrDefault();
 
             PateintList.ItemsSource = DB.Users.Where(x=>x.Id_doctor == id).ToList();
         }
@@ -69,6 +69,11 @@ namespace PsychoTest.Pages
             TextBlock tb = (TextBlock)sender;
             int id = Convert.ToInt32(tb.Uid);
             tb.Text = DB.Results.Where(x => x.Result_id == id).Select(x => x.Result_name).FirstOrDefault();
+        }
+
+        private void ExitToAuth(object sender, RoutedEventArgs e)
+        {
+            MainFrame.frame.Navigate(new LoginPage());
         }
 
     }
