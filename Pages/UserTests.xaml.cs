@@ -67,7 +67,7 @@ namespace PsychoTest.Pages
             List<Tests> FilterList = DB.Tests.ToList();
             if(CategoryFilter.SelectedIndex!= 0)
             {
-                FilterList = FilterList.Where(x=>x.Id_category+1 == CategoryFilter.SelectedIndex).ToList();
+                FilterList = FilterList.Where(x=>x.Id_category == CategoryFilter.SelectedIndex+1).ToList();
             }
             if (!string.IsNullOrEmpty(SearchBar.Text))
             {
